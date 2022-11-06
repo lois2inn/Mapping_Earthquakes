@@ -31,8 +31,14 @@ The main purpose of this project is to visually show the differences between the
 
 ## Results
 
-- To complete this project, GeoJSON earthquake data from the USGS website is used to retrieve geographical coordinates and the magnitudes of earthquakes for the last seven days. 
-- Leaflet library is used to plot the data on a Mapbox map through an API request. 
-- Multiple map layers are displayed with data as overlay and all interactivity is achieved using JavaScript.
-- Each earthquake is visually represented by a circle and color, where a higher magnitude has a larger diameter and is darker in color. 
+- To complete this project, GeoJSON earthquake data from the USGS website is used to retrieve geographical coordinates and the magnitudes of earthquakes for the last seven days. Leaflet library is used to plot the data on a Mapbox map through an API request. 
+- The below map has Street and Satellite tile layers with tectonic plates (shown as red lines) and earthquake data (shown in circles) laid over these layers.
+<img src="static/images/Deliverable_1.png" width="500"/>
+
+- Each earthquake is visually represented by a circle and color, where a higher magnitude has a larger diameter and is darker in color. A legend is added to facilitate reading in this regard.
 - In addition, each earthquake has a popup marker that, when clicked, shows the magnitude and the location of the earthquake.
+- The major earthquake data is added as an overlay on both the street and satellite tile layers.
+<img src="static/images/Deliverable_2.png" width="500"/>
+
+- Besides the existing street and satellite views of the map, a dark layer is added. The major earthquakes, tectonic plates and all earthquakes data can be toggled over a selected map layer as per user's choice. 
+<img src="static/images/Deliverable_3.png" width="500"/>
