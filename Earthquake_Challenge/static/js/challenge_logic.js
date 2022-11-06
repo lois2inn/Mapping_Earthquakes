@@ -144,7 +144,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
     // 5. Change the color function to use three colors for the major earthquakes based on the magnitude of the earthquake.
     // Three colors for the following magnitudes: magnitude < 5, a magnitude > 5, and a magnitude > 6.
-    // Updated legend to add new magnitude and color for majorEarthquake layer
+    // (Deliverable 2 - Bonus:)Updated legend to add new magnitude and color for majorEarthquake layer
     function getColor(magnitude) {
       if (magnitude > 6) {
         return "#730101";
@@ -191,7 +191,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
   legend.onAdd = function () {
     let div = L.DomUtil.create("div", "info legend");
 
-    // Deliverable 2: Added an extra magnitude: 6 and corresponding color: "#730101"
+    // Deliverable 2 (Bonus): Added an extra magnitude: 6 and corresponding color: "#730101"
     const magnitudes = [0, 1, 2, 3, 4, 5, 6];
     const colors = [
       "#98ee00",
